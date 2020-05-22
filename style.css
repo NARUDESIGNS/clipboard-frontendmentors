@@ -11,7 +11,7 @@
     --Grayish-Blue: hsl(201, 11%, 66%);
 }
 body {
-    font-size: 16px;
+    font-size: 18px;
     font-family: 'Bai Jamjuree', sans-serif;
     color: var(--Grayish-Blue);
     background: url(images/bg-header-desktop.png) no-repeat top;
@@ -20,7 +20,7 @@ body {
 }
 h1,h2,h3,h4 {
     color: var(--Dark-Grayish-Blue);
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 10px;
 }
 .social-media-icons:hover {
@@ -29,21 +29,23 @@ h1,h2,h3,h4 {
 }
 .overall-container {
     text-align: center;
+    padding: 0 8%;
 }
 .header {
-    margin: 120px;
+    margin: 100px;
 }
 .header .logo {
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
+    margin: 30px 0;
 }
 .header p {
     width: 600px;
     margin: 0 auto;
     text-align: center;
 }
-.header button{
-    padding: 20px;
+button{
+    padding: 13px 45px;
     border: none;
     border-radius: 30px;
     -webkit-border-radius: 30px;
@@ -51,5 +53,45 @@ h1,h2,h3,h4 {
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
     cursor: pointer;
+    color: white;
+    font-size: 15px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    margin-top: 30px;
 }
-.header 
+.buttons .ios {
+    background-color: var(--Strong-Cyan);
+    box-shadow: 0 10px 10px hsl(171, 66%, 44%, .2);
+    border-bottom: 4px solid rgba(24, 104, 92, 0.2);
+}
+.buttons .mac {
+    background-color: var(--Light-Blue, hsl(233, 100%, 69%));
+    box-shadow: 0 10px 10px hsl(233, 100%, 69%, .2);
+    border-bottom: 4px solid rgba(24, 104, 92, 0.2);
+    margin-left: 10px;
+}
+.info-1 {
+    margin: 100px 0;
+}
+.info-1 p {
+    width: 700px;
+    margin-bottom: 100px;
+    margin: 0 auto;
+    text-align: center;
+}
+.info-2 .features {
+    display: flex;
+    justify-content: space-between;
+}
+.features img {
+    margin-left: -170px;
+}
+.features aside {
+    text-align: left;
+    margin: 20px 0 0 100px;
+}
+.features aside h3 {
+    margin-top: 50px;
+}
+.info-3 {
+    margin: 150px 0 70px 0;
+}
