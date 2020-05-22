@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+:root {
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+}
+body {
+    font-size: 18px;
+    font-family: url(https://fonts.google.com/specimen/Bai+Jamjuree);
+    color: var(--Dark-Grayish-Blue);
+    background: url(images/bg-header-desktop.png);
+}
+.overall-container {
+    
+}
