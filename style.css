@@ -11,11 +11,45 @@
     --Grayish-Blue: hsl(201, 11%, 66%);
 }
 body {
-    font-size: 18px;
-    font-family: url(https://fonts.google.com/specimen/Bai+Jamjuree);
+    font-size: 16px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: var(--Grayish-Blue);
+    background: url(images/bg-header-desktop.png) no-repeat top;
+    line-height: 1.6;
+    font-weight: 10;
+}
+h1,h2,h3,h4 {
     color: var(--Dark-Grayish-Blue);
-    background: url(images/bg-header-desktop.png);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.social-media-icons:hover {
+    color: var(--Strong-Cyan);
+    cursor: pointer;
 }
 .overall-container {
-    
+    text-align: center;
 }
+.header {
+    margin: 120px;
+}
+.header .logo {
+    width: 100px;
+    height: 100px;
+}
+.header p {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+.header button{
+    padding: 20px;
+    border: none;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    cursor: pointer;
+}
+.header 

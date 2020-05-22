@@ -27,7 +27,7 @@ The designs were created to the following widths:
 
 ### Fonts
 
-- Family: [Bai Jamjuree](https://fonts.google.com/specimen/Bai+Jamjuree)
+- Family: [Bai Jamjuree](https://fonts.google.com/specimen/Bai+Jamjuree) 
 - Weights: 400, 600
 
 ## Icons
