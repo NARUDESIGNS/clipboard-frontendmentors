@@ -15,7 +15,7 @@ body {
     font-family: 'Bai Jamjuree', sans-serif;
     color: var(--Grayish-Blue);
     background: url(images/bg-header-desktop.png) no-repeat top;
-    line-height: 1.6;
+    line-height: 1.8;
     font-weight: 10;
 }
 h1,h2,h3,h4 {
@@ -23,24 +23,22 @@ h1,h2,h3,h4 {
     font-weight: 600;
     margin-bottom: 10px;
 }
-.social-media-icons:hover {
-    color: var(--Strong-Cyan);
-    cursor: pointer;
-}
 .overall-container {
     text-align: center;
 }
 .header {
-    padding: 100px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .header .logo {
-    width: 130px;
-    height: 130px;
-    margin: 30px 0;
+    width: 110px;
+    height: 110px;
+    margin: 120px 0 30px 0;
 }
 .header p {
-    width: 600px;
-    margin: 0 auto;
+    width: 50%;
     text-align: center;
 }
 button{
@@ -55,7 +53,7 @@ button{
     color: white;
     font-size: 15px;
     font-family: 'Bai Jamjuree', sans-serif;
-    margin-top: 30px;
+    margin: 30px 0 100px 0;
 }
 .buttons .ios {
     background-color: var(--Strong-Cyan);
@@ -69,63 +67,61 @@ button{
     margin-left: 10px;
 }
 .info-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     margin-bottom: 100px;
 }
 .info-1 p {
-    width: 700px;
-    margin-bottom: 100px;
-    margin: 0 auto;
+    width: 55%;
     text-align: center;
 }
-.info-2 .features {
+.info-2 {
     display: flex;
+    align-content: flex-end;
     justify-content: space-between;
 }
-.features img {
-    margin-left: -70px;
+.info-2 img {
+    margin-left: -7%;
 }
-.features aside {
+.info-2 aside {
     text-align: left;
-    margin: 20px 0 0 100px;
-    padding-right: 100px;
+    margin-left: 10%;
+    padding-right: 10%;
+    font-size: 16px;
 }
-.features aside h3 {
+.info-2 aside h3 {
     margin-top: 50px;
 }
 .info-3 {
-    margin-top: 150px;
-    padding: 0 50px;
-    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 135px 0 20px 0;
 }
 .info-3 p {
     text-align: center;
     margin-bottom: 70px;
-    padding: 10px 20%;
+    width: 55%;
+    /* padding: 10px 22%; */
 }
 .info-4 {
-    margin-bottom: 70px;
+    margin-bottom: 70px; 
 }
 .benefits {
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-size: 15px;
-    padding: 0 70px;
-    margin-bottom: 150px;
+    margin-bottom: 120px;
 }
 .benefits section img[alt="blacklist icon"]{
-    transform: scale(0.8);
-    -webkit-transform: scale(0.8);
-    -moz-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    -o-transform: scale(0.8);
+    margin-top: 20px;
 }
 .benefits section {
-    margin-left: 50px;
     width: 300px;
-}
-.benefits :nth-child(1) {
-    margin-left: -10px;
 }
 .sponsors {
     margin-bottom: 150px;
@@ -135,8 +131,6 @@ button{
 }
 .ad {
     padding: 0 25%;
-    margin: 20px 0;
-    margin-bottom: 100px;
 }
 .footer {
     background-color: hsl(201, 11%, 66%, 0.1);
@@ -149,15 +143,15 @@ button{
 .footer img {
     width: 50px;
     height: 50px;
-    margin-left: 50px;
 }
 .footer .footer-links {
     display: flex;
     justify-content: space-evenly;
+    margin-left: -50px;
 }
 .footer-links ul {
     list-style-type: none;
-    font-size: 18px;
+    font-size: 16px;
     margin-left: 70px;
 }
 .footer-links ul li {
@@ -169,32 +163,115 @@ button{
     -moz-transform: scale(0.9);
     -ms-transform: scale(0.9);
     -o-transform: scale(0.9);
-    margin: 30px 0 0 10px;
+    margin: 30px 0 0 100px;
 }
 .social-media-links svg {
     margin-left: 20px;
 }
-
+.social-media-links svg:hover path {
+    cursor: pointer;
+    fill: var(--Strong-Cyan);
+}
 
 
 /* -------------------------------- MOBILE VIEW ---------------------------------- */
 
 @media only screen and (max-width: 1000px){
-    body {
-        /* background: url(images/bg-header-mobile.png) no-repeat top; */
-        margin: 0;
-        padding: 0;
+    h1, h2, h3, h4 {
+        padding: 0 5%;
     }
-    .header{
-        display: block;
-        margin: 0 auto;
+    .info-2 {
+        flex-direction: column;
     }
     .header .logo {
-        width: 130px;
-        height: 130px;
-        margin-top: 50px;
+        margin-bottom: 50px;
     }
-    .bottons {
+    .header h1 {
+        width: 100%;
+        line-height: 1.4;
+    }
+    .header p {
+        width: 90%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    button {
         display: block;
+        margin: 20px 0 40px 0;
+        width: 300px;
+        font-size: 18px;
+        padding: 17px;
+    }
+    .buttons .mac{
+        margin-left: 0;
+    }
+    .benefits, .sponsors {
+        flex-direction: column;
+    }
+    .sponsors img {
+        margin-top: 70px;
+    }
+    .info-1 {
+        margin-top: 100px;
+    }
+    .info-1 p {
+        width: 80%;
+    }
+    .info-2 img, .info-3 img {
+        margin: 0;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .info-2 aside {
+        text-align: center;
+        font-size: 18px;
+    }
+    .info-3 p {
+        width: 80%
+    }
+    .benefits section {
+        margin-bottom: 70px;
+    }
+    .sponsors {
+        margin-top: -100px;
+    }
+    .ad {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 10%;
+    }
+    .ad .buttons {
+        margin: 30px 0 120px 0;
+    }
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .footer img {
+        margin: 20px 0;
+    }
+    .footer .footer-links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0;
+    }
+    .footer-links ul, .footer-links ul li {
+        margin: 0;
+        text-align: center;
+    }
+    .footer-links li {
+        line-height: 3;
+    }
+    .footer .social-media-links {
+        margin: 20px 0;
+    }
+    .social-media-links :nth-child(1) {
+        margin: 0;
     }
 }
